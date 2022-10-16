@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>名片分享網頁</title>
+    <script src="https://static.line-scdn.net/liff/edge/2/sdk.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+    <script>
+        //==========================LIFF API初始化================================
+        $(document).ready(function() {
+            liff.init({
+                liffId: "1657561794-9w2m200b"
+            });
+        });
+        //==========================LIFF API初始化================================
+
+
+        function liff_LINE_Card() {
+            liff.shareTargetPicker(
+                [ {
+                  "type": "flex",
+                        "altText": "你好，我是許文彰，這是我的名片",
+                        "contents": {
+                    "type": "carousel",
+                    "contents": [
+                      {
+                        "type": "bubble",
+                        "body": {
+                          "type": "box",
+                          "layout": "vertical",
+                          "contents": [
+                            {
+                              "type": "image",
+                              "url": "https://i.imgur.com/r1CXl3M.png",
+                              "size": "full",
+                              "aspectMode": "cover",
+                              "aspectRatio": "2:3.6",
+                              "gravity": "top"
+                            },
+                            {
+                              "type": "box",
+                              "layout": "vertical",
+                              "contents": [],
+                              "position": "absolute",
+                              "cornerRadius": "20px",
+                              "offsetTop": "340px",
+                              "backgroundColor": "#ffffff00",
+                              "offsetStart": "30px",
+                              "height": "60px",
+                              "width": "75px",
+                              "action": {
+                                "type": "uri",
+                                "label": "action",
+                                "uri": "mailto:eaglefly2000@gmail.com"
+                              }
+                            },
+                            {
+                              "type": "box",
+                              "layout": "vertical",
+                              "contents": [],
+                              "position": "absolute",
+                              "cornerRadius": "20px",
+                              "offsetTop": "440px",
+                              "backgroundColor": "#ffffff00",
+                              "offsetStart": "33px",
+                              "height": "70px",
+                              "width": "70px",
+                              "action": {
+                                "type": "uri",
+                                "label": "action",
+                                "uri": "https://line.me/ti/p/iH0UCKlwH7"
+                              }
+                            },
+                            {
+                              "type": "box",
+                              "layout": "vertical",
+                              "contents": [],
+                              "position": "absolute",
+                              "cornerRadius": "20px",
+                              "offsetTop": "490px",
+                              "backgroundColor": "#ffffff00",
+                              "offsetStart": "128px",
+                              "height": "50px",
+                              "width": "50px",
+                              "action": {
+                                "type": "uri",
+                                "label": "action",
+                                "uri": "tel:0914139314"
+                              }
+                            },
+                            {
+                              "type": "box",
+                              "layout": "vertical",
+                              "contents": [],
+                              "position": "absolute",
+                              "cornerRadius": "20px",
+                              "offsetTop": "490px",
+                              "backgroundColor": "#ffffff00",
+                              "offsetStart": "183px",
+                              "height": "50px",
+                              "width": "50px",
+                              "action": {
+                                "type": "uri",
+                                "label": "action",
+                                "uri": "tel:0906786768"
+                              }
+                            },
+                            {
+                              "type": "box",
+                              "layout": "vertical",
+                              "contents": [],
+                              "position": "absolute",
+                              "cornerRadius": "20px",
+                              "offsetTop": "490px",
+                              "backgroundColor": "#ffffff00",
+                              "offsetStart": "240px",
+                              "height": "50px",
+                              "width": "50px",
+                              "action": {
+                                "type": "uri",
+                                "label": "action",
+                                "uri": "https://gbrp.tw/index.php/zh-tw/eaglefly.html"
+                              }
+                            }
+                          ],
+                          "paddingAll": "0px"
+                        }
+                      },
+                      {
+                        "type": "bubble",
+                        "body": {
+                          "type": "box",
+                          "layout": "vertical",
+                          "contents": [
+                            {
+                              "type": "image",
+                              "url": "https://i.imgur.com/hWxgkKi.png",
+                              "size": "full",
+                              "aspectMode": "cover",
+                              "aspectRatio": "2:3.6",
+                              "gravity": "top"
+                            },
+                            {
+                              "type": "box",
+                              "layout": "vertical",
+                              "contents": [],
+                              "position": "absolute",
+                              "cornerRadius": "20px",
+                              "offsetTop": "410px",
+                              "backgroundColor": "#ffffff00",
+                              "offsetStart": "180px",
+                              "height": "130px",
+                              "width": "130px",
+                              "action": {
+                                "type": "uri",
+                                "label": "action",
+                                "uri": "https://lihi2.cc/Ri0VM"
+                              }
+                            }
+                          ],
+                          "paddingAll": "0px"
+                        }
+                      },
+                      {
+                        "type": "bubble",
+                        "body": {
+                          "type": "box",
+                          "layout": "vertical",
+                          "contents": [
+                            {
+                              "type": "image",
+                              "url": "https://i.imgur.com/4HbK5xy.png",
+                              "size": "full",
+                              "aspectMode": "cover",
+                              "aspectRatio": "2:3.6",
+                              "gravity": "top"
+                            },
+                            {
+                              "type": "box",
+                              "layout": "vertical",
+                              "contents": [],
+                              "position": "absolute",
+                              "cornerRadius": "20px",
+                              "offsetTop": "305px",
+                              "backgroundColor": "#ffffff00",
+                              "offsetStart": "37px",
+                              "height": "50px",
+                              "width": "50px",
+                              "action": {
+                                "type": "uri",
+                                "label": "action",
+                                "uri": "https://www.instagram.com/eaglefly2000/"
+                              }
+                            },
+                            {
+                              "type": "box",
+                              "layout": "vertical",
+                              "contents": [],
+                              "position": "absolute",
+                              "cornerRadius": "20px",
+                              "offsetTop": "365px",
+                              "backgroundColor": "#ffffff00",
+                              "offsetStart": "37px",
+                              "height": "50px",
+                              "width": "50px",
+                              "action": {
+                                "type": "uri",
+                                "label": "action",
+                                "uri": "https://www.facebook.com/eaglefly2000"
+                              }
+                            },
+                            {
+                              "type": "box",
+                              "layout": "vertical",
+                              "contents": [],
+                              "position": "absolute",
+                              "cornerRadius": "20px",
+                              "offsetTop": "425px",
+                              "backgroundColor": "#ffffff00",
+                              "offsetStart": "37px",
+                              "height": "50px",
+                              "width": "50px",
+                              "action": {
+                                "type": "uri",
+                                "label": "action",
+                                "uri": "https://vt.tiktok.com/ZSdoAMbT9/"
+                              }
+                            }
+                          ],
+                          "paddingAll": "0px"
+                        }
+                      }
+                    ]
+                  }
+                  }], {
+                    isMultiple: true,
+                }
+            );
+        }
+
+    </script>
+    <style>
+        h1 {
+            width: 80%;
+            height: 40px;
+            margin-left: 10%;
+        }
+        
+        button {
+            width: 80%;
+            height: 40px;
+            margin-left: 10%;
+            background-color: #c9e8e3;
+            font-weight: 600;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>數位名片分享</h1>
+    <h1></h1>
+    <button onclick="liff_LINE_Card()">傳送LINE名片</button><br /><br />
+    <br /><br />
+</body>
+
+</html>
