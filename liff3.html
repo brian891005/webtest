@@ -12,7 +12,7 @@
         //==========================LIFF API初始化================================
         $(document).ready(function() {
             liff.init({
-                liffId: "1657561794-l7GVGMMg"
+                liffId: "1657561794-ngqrq88b"
             });
         });
         //==========================LIFF API初始化================================
@@ -356,6 +356,7 @@
             }
             }],);
           alert("名片已傳送訊息");
+          liff.closeWindow();
       }
       function liff_LINE_Card2() {
         liff.sendMessages([ {
@@ -607,6 +608,7 @@
           }
           }],);
         alert("名片已傳送訊息");
+        liff.closeWindow();
     }
         function liff_LINE_Card3() {
           liff.sendMessages([ {"type": "flex",
@@ -944,136 +946,151 @@
         ]
       }}],);
             alert("名片已傳送訊息");
+            liff.closeWindow();
         }
 
     </script>
     <style>
         h1 {
-            
-            text-align: center;
+            width: 80%;
+            height: 40px;
+            margin-left: 10%;
         }
-        
-        
+        @use 'sass:color';
+// Tip: If you don't want to use Sass, click the downward arrow on the top right of this textbox to see the compiled CSS.
 
+// One-stop magic hue shift
+$hue: 277deg; // change me (0deg-360deg)
+$hue-adjust: 135deg; // and me
 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-          }
-          
-          body {
-            display: flex;
-            flex-direction: column;
-            gap: 1rem;
-            align-items: center;
-            justify-content: center;
-            min-height: 100vh;
-            background: #27272c;
-          }
-          
-          button {
-            position: relative;
-            background: #444;
-            color: #fff;
-            text-decoration: none;
-            text-transform: uppercase;
-            border: none;
-            letter-spacing: 0.1rem;
-            font-size: 1rem;
-            padding: 1rem 3rem;
-            transition: 0.2s;
-          }
-          
-          button:hover {
-            letter-spacing: 0.2rem;
-            padding: 1.1rem 3.1rem;
-            background: var(--clr);
-            color: var(--clr);
-            /* box-shadow: 0 0 35px var(--clr); */
-            animation: box 3s infinite;
-          }
-          
-          button::before {
-            content: "";
-            position: absolute;
-            inset: 2px;
-            background: #272822;
-          }
-          
-          button span {
-            position: relative;
-            z-index: 1;
-          }
-          button i {
-            position: absolute;
-            inset: 0;
-            display: block;
-          }
-          
-          button i::before {
-            content: "";
-            position: absolute;
-            width: 10px;
-            height: 2px;
-            left: 80%;
-            top: -2px;
-            border: 2px solid var(--clr);
-            background: #272822;
-            transition: 0.2s;
-          }
-          
-          button:hover i::before {
-            width: 15px;
-            left: 20%;
-            animation: move 3s infinite;
-          }
-          
-          button i::after {
-            content: "";
-            position: absolute;
-            width: 10px;
-            height: 2px;
-            left: 20%;
-            bottom: -2px;
-            border: 2px solid var(--clr);
-            background: #272822;
-            transition: 0.2s;
-          }
-          
-          button:hover i::after {
-            width: 15px;
-            left: 80%;
-            animation: move 3s infinite;
-          }
-          
-          @keyframes move {
-            0% {
-              transform: translateX(0);
-            }
-            50% {
-              transform: translateX(5px);
-            }
-            100% {
-              transform: translateX(0);
-            }
-          }
-          
-          @keyframes box {
-            0% {
-              box-shadow: #27272c;
-            }
-            50% {
-              box-shadow: 0 0 25px var(--clr);
-            }
-            100% {
-              box-shadow: #27272c;
-            }
-          }
-          
-          
-        
-        
+$hue-contrast: color.hue(color.adjust(hsl($hue, 100%, 50%), $hue: $hue-adjust));
+
+:root {
+  --page-background: #{$hue}, 55%, 12%;
+}
+
+button {
+  // We're using HSL values, so we can use hsla() and control opacity when required
+  // hsla(hue, saturation, lightness, opacity)
+
+  --text-base: #{$hue}, 55%, 40%;
+  --text-hover: #{$hue + 30}, 72%, 86%;
+
+  --shadow-start: #{$hue-contrast}, 100%, 72%;
+  --shadow-end: #{$hue + 5}, 90%, 50%;
+
+  --shadow-inner: #{$hue}, 90%, 62%;
+
+  all: unset;
+
+  // Text
+  color: hsla(var(--text-base), 1);
+  font: 700 1.125rem/1.2 Raleway, sans-serif;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  text-align: center;
+
+  // Button sizing
+  padding: 0.85em;
+  max-width: 100%;
+  width: 12em;
+
+  // Button styling
+  background: inherit;
+  background-clip: padding-box;
+  border: 5px solid hsla(var(--text-base), 1);
+  border-radius: 2em;
+  cursor: pointer;
+
+  // Effects
+  position: relative;
+  transition: 0.25s ease-out;
+
+  // Set up pseudo elements
+  &::before,
+  &::after {
+    content: "";
+    border-radius: inherit;
+    transition: inherit;
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+  }
+
+  // Gradient shadow
+  &::before {
+    // Position
+    inset: -0.2em;
+    z-index: -1;
+
+    // Effect
+    background: linear-gradient(hsla(var(--shadow-start), 1), hsla(var(--shadow-end), 1));
+    filter: blur(1.2em) saturate(1.2);
+
+    // Animation
+    transform-origin: bottom;
+    transform: scaleY(0.5);
+    opacity: 0;
+  }
+
+  // Semi-transparent blended box-shadow brightens up the border
+  &::after {
+    // Effect
+    box-shadow: inset 0 0 0 1px #fff, // inner pixel
+      0 0 0 4px hsla(0deg, 0%, 100%, 0.7), // ligthened border
+      1px 1px 0 4px #fff; // outer pixel
+    mix-blend-mode: overlay;
+
+    // Animation
+    opacity: 0;
+  }
+
+  &:hover,
+  &:focus {
+    color: hsla(var(--text-hover), 1);
+
+    // Lighten border
+    border-color: transparent;
+
+    // Inner shadow
+    box-shadow: 
+      inset 0 1.4em 0 hsla(var(--shadow-inner), 0.1), // gloss
+      inset 0 0 1.4em hsla(var(--shadow-inner), 0.32), // inner glow
+      0 1px 1px hsla(var(--shadow-inner), 0.32); // bottom line
+
+    // Show effects
+    &::before,
+    &::after {
+      transform: none;
+      opacity: 1;
+    }
+  }
+}
+
+// Pen styling, ignore
+html,
+body {
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  display: flex;
+  place-content: center;
+  place-items: center;
+}
+
+body,
+.container {
+  background: hsla(var(--page-background), 1);
+}
+
+.container {
+  padding: 3em;
+  position: relative;
+  z-index: 1;
+}
+
 
     </style>
 </head>
@@ -1082,15 +1099,12 @@
     <h1>數位名片版型分享</h1>
     <h1></h1>
     <div class="container">
-        <button onclick="liff_LINE_Card()" style="--clr:#39FF14"><span>傳送版型一</span><i></i></button>
-  <!-- <button style="--clr:#FF3131"><span>Button</span><i></i></button> -->
-  <!-- <button style="--clr:#1F51FF"><span>Button</span><i></i></button> -->
-  <!-- <button style="--clr:#BC13FE"><span>Button</span><i></i></button> -->
-  <button onclick="liff_LINE_Card2()" style="--clr:#0FF0FC"><span>傳送版型二</span><i></i></button>
-  <!-- <button style="--clr:#E7EE4F"><span>Button</span><i></i></button> -->
-  <button onclick="liff_LINE_Card3()" style="--clr:#8A2BE2"><span>傳送版型三</span><i></i></button>
-
-        
+        <button>Hover Me</button>
+      </div>
+    <button onclick="liff_LINE_Card()">傳送LINE名片版型一</button><br /><br />
+    <button onclick="liff_LINE_Card2()">傳送LINE名片版型二</button><br /><br />
+    <button onclick="liff_LINE_Card3()">傳送LINE名片版型三</button><br /><br />
+    <br /><br />
 </body>
 
 </html>
