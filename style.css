@@ -413,6 +413,7 @@ img {
   max-width: calc(90rem + 10vw);
   padding: 1.5rem 5vw;
   width: 100%;
+  background-color: white;
 }
 .Main > *:first-child {
   margin-block-start: 0;
