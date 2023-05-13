@@ -81,7 +81,7 @@ a:focus:not(:focus-visible),
 }
 
 .Carousel--single .Card {
-  --card-ratio: auto;
+  --card-ratio: auto
   flex: 1 0 100%;
 }
 
@@ -345,7 +345,7 @@ a:focus:not(:focus-visible),
 }
 
 .Card--photo {
-  --card-ratio: auto 4/3;
+  --card-ratio: auto 1080/1920;
 }
 
 .Card--portrait {
