@@ -611,340 +611,93 @@
         liff.closeWindow();
     }
         function liff_LINE_Card3() {
-          liff.sendMessages([ {"type": "flex",
-            "altText": "你好，我是姜繼堯，這是我的名片",
-            "contents": {
-        "type": "carousel",
-        "contents": [
-          {
-            "type": "bubble",
-            "body": {
-              "type": "box",
-              "layout": "vertical",
+          liff.shareTargetPicker([ {
+            "type": "flex",
+                  "altText": "全球商務引薦平台付款連結",
+                  "contents": {
+              "type": "carousel",
               "contents": [
                 {
-                  "type": "image",
-                  "url": "https://i.imgur.com/a7EStci.png",
-                  "size": "full",
-                  "aspectMode": "cover",
-                  "aspectRatio": "4:7",
-                  "gravity": "top"
-                },
-                {
-                  "type": "box",
-                  "layout": "vertical",
-                  "contents": [
-                    {
-                      "type": "text",
-                      "text": "幸福超人",
-                      "size": "xl",
-                      "color": "#ffffff",
-                      "weight": "bold"
-                    },
-                    {
-                      "type": "box",
-                      "layout": "baseline",
-                      "contents": [
-                        {
-                          "type": "text",
-                          "text": "我是＠幸福超人，擁有國家考試及格的不動產地政士及經紀人雙證照的專業經理人，經營不動產業務經驗已經長達30年之久，專辦『另類不動產』相關業務。",
-                          "color": "#ebebeb",
-                          "size": "xs",
-                          "flex": 5,
-                          "margin": "xs",
-                          "wrap": true
-                        }
-                      ],
-                      "spacing": "lg"
-                    },
-                    {
-                      "type": "box",
-                      "layout": "vertical",
-                      "contents": [
-                        {
-                          "type": "text",
-                          "text": "分享 幸福超人名片",
-                          "color": "#ffffff",
-                          "flex": 0,
-                          "offsetTop": "8px",
-                          "action": {
-                            "type": "uri",
-                            "label": "action",
-                            "uri": "https://gbrpcards.com/TwuYG"
-                          },
-                          "offsetStart": "55px"
-                        }
-                      ],
-                      "borderWidth": "1px",
-                      "cornerRadius": "4px",
-                      "spacing": "sm",
-                      "borderColor": "#ffffff",
-                      "margin": "xxl",
-                      "height": "40px"
-                    }
-                  ],
-                  "position": "absolute",
-                  "offsetBottom": "0px",
-                  "offsetStart": "0px",
-                  "offsetEnd": "0px",
-                  "backgroundColor": "#03303Acc",
-                  "paddingAll": "25px",
-                  "paddingTop": "18px"
-                },
-                {
-                  "type": "box",
-                  "layout": "vertical",
-                  "contents": [],
-                  "width": "40px",
-                  "height": "45px",
-                  "position": "absolute",
-                  "offsetTop": "250px",
-                  "offsetStart": "55px",
-                  "action": {
-                    "type": "uri",
-                    "label": "action",
-                    "uri": "tel:0980911618"
-                  }
-                },
-                {
-                  "type": "box",
-                  "layout": "vertical",
-                  "contents": [],
-                  "width": "40px",
-                  "height": "45px",
-                  "position": "absolute",
-                  "offsetTop": "250px",
-                  "offsetStart": "108px",
-                  "action": {
-                    "type": "uri",
-                    "label": "action",
-                    "uri": "https://gbrp.tw/index.php/zh-tw/yesok99.html"
-                  }
-                },
-                {
-                  "type": "box",
-                  "layout": "vertical",
-                  "contents": [],
-                  "width": "40px",
-                  "height": "45px",
-                  "position": "absolute",
-                  "offsetTop": "250px",
-                  "offsetStart": "156px",
-                  "action": {
-                    "type": "uri",
-                    "label": "action",
-                    "uri": "https://line.me/ti/p/5iUXzqm3nR"
-                  }
-                },
-                {
-                  "type": "box",
-                  "layout": "vertical",
-                  "contents": [],
-                  "width": "40px",
-                  "height": "45px",
-                  "position": "absolute",
-                  "offsetTop": "250px",
-                  "offsetStart": "210px",
-                  "action": {
-                    "type": "uri",
-                    "label": "action",
-                    "uri": "mailto:yesok99@gmail.com"
-                  }
-                }
-              ],
-              "paddingAll": "0px"
-            }
-          },
-          {
-            "type": "bubble",
-            "body": {
-              "type": "box",
-              "layout": "vertical",
-              "contents": [
-                {
-                  "type": "image",
-                  "url": "https://i.imgur.com/2B1UB0c.png",
-                  "size": "full",
-                  "aspectMode": "cover",
-                  "aspectRatio": "4:7",
-                  "gravity": "top"
-                },
-                {
-                  "type": "box",
-                  "layout": "vertical",
-                  "contents": [
-                    {
-                      "type": "text",
-                      "text": "另類不動產的專家",
-                      "size": "xl",
-                      "color": "#ffffff",
-                      "weight": "bold"
-                    },
-                    {
-                      "type": "box",
-                      "layout": "baseline",
-                      "contents": [
-                        {
-                          "type": "text",
-                          "text": "另類不動產的實戰專家，是一位擁有特殊專業經驗的不動產經理人，專辦『另類不動產』相關業務，如：共有物分割案件/日據時期未辦繼承案件",
-                          "color": "#ebebeb",
-                          "size": "xs",
-                          "flex": 5,
-                          "margin": "xs",
-                          "wrap": true
-                        }
-                      ],
-                      "spacing": "lg"
-                    },
-                    {
-                      "type": "box",
-                      "layout": "vertical",
-                      "contents": [
-                        {
-                          "type": "text",
-                          "text": "幸福不動產的行動官網",
-                          "color": "#ffffff",
-                          "flex": 0,
-                          "offsetTop": "8px",
-                          "offsetStart": "40px"
-                        }
-                      ],
-                      "borderWidth": "1px",
-                      "cornerRadius": "4px",
-                      "spacing": "sm",
-                      "borderColor": "#ffffff",
-                      "margin": "xxl",
-                      "height": "40px",
-                      "action": {
-                        "type": "uri",
-                        "label": "action",
-                        "uri": "https://lin.ee/WkocHpi"
+                  "type": "bubble",
+                  "body": {
+                    "type": "box",
+                    "layout": "vertical",
+                    "contents": [
+                      {
+                        "type": "image",
+                        "url": "https://i.imgur.com/9wmB3oU.jpg",
+                        "size": "full",
+                        "aspectMode": "cover",
+                        "aspectRatio": "2.9:2.1",
+                        "gravity": "top"
                       }
-                    }
-                  ],
-                  "position": "absolute",
-                  "offsetBottom": "0px",
-                  "offsetStart": "0px",
-                  "offsetEnd": "0px",
-                  "backgroundColor": "#946400cc",
-                  "paddingAll": "25px",
-                  "paddingTop": "18px"
-                },
-                {
-                  "type": "box",
-                  "layout": "vertical",
-                  "contents": [],
-                  "position": "absolute",
-                  "width": "55px",
-                  "height": "55px",
-                  "offsetTop": "245px",
-                  "offsetStart": "226px",
-                  "action": {
-                    "type": "uri",
-                    "label": "action",
-                    "uri": "https://line.me/ti/p/~@997ihvtd"
+                    ],
+                    "paddingAll": "0px"
+                  },
+                  "footer": {
+                    "type": "box",
+                    "layout": "horizontal",
+                    "contents": [
+                      {
+                        "type": "box",
+                        "layout": "vertical",
+                        "contents": [
+                          {
+                            "type": "text",
+                            "text": "文字訊息",
+                            "color": "#ffffff",
+                            "align": "center",
+                            "size": "md",
+                            "offsetTop": "30%",
+                            "action": {
+                              "type": "message",
+                              "label": "action",
+                              "text": "幸福超人的收款連結碼⋯⋯ \n\n「全球商務引薦平台」入會繳款 敬請點選連結付款，以新台幣計價喔⋯⋯\n\n『全球商務引薦平台』商務會員\n ◎入會年費：10,000元 \n◎註冊費：2,000元\n(商務會員入會時繳納，僅收一次) \n合計費用12,000元\n\n 匯款時敬請註記姓名，並私訊回覆我們，以利查詢！ 點選幸福超人的下方收款連結:\n\n https://www.chengkungpay.com/Home.html?id=aVc2aWhCWlZycW5va2VTRnU1ZTI2USUzZCUzZA=="
+                            },
+                            "wrap": true
+                          }
+                        ],
+                        "cornerRadius": "20px",
+                        "width": "90px"
+                      },
+                      {
+                        "type": "box",
+                        "layout": "vertical",
+                        "contents": [
+                          {
+                            "type": "button",
+                            "action": {
+                              "type": "uri",
+                              "label": "收款連結",
+                              "uri": "https://line.me/ti/g/3g4ohYhIiX"
+                            },
+                            "color": "#ffffff"
+                          }
+                        ],
+                        "width": "100px"
+                      },
+                      {
+                        "type": "box",
+                        "layout": "vertical",
+                        "contents": [
+                          {
+                            "type": "button",
+                            "action": {
+                              "type": "uri",
+                              "label": "分享",
+                              "uri": "https://gbrpcards.com/o5Oms"
+                            },
+                            "color": "#ffffff"
+                          }
+                        ]
+                      }
+                    ],
+                    "backgroundColor": "#3c5c6f"
                   }
                 }
-              ],
-              "paddingAll": "0px"
+              ]
             }
-          },
-          {
-            "type": "bubble",
-            "body": {
-              "type": "box",
-              "layout": "vertical",
-              "contents": [
-                {
-                  "type": "image",
-                  "url": "https://i.imgur.com/3CGRLAi.png",
-                  "size": "full",
-                  "aspectMode": "cover",
-                  "aspectRatio": "4:7",
-                  "gravity": "top"
-                },
-                {
-                  "type": "box",
-                  "layout": "vertical",
-                  "contents": [
-                    {
-                      "type": "text",
-                      "text": "點擊上方加入Line官方",
-                      "size": "xl",
-                      "color": "#ffffff",
-                      "weight": "bold"
-                    },
-                    {
-                      "type": "box",
-                      "layout": "baseline",
-                      "contents": [
-                        {
-                          "type": "text",
-                          "text": "幸福學堂\n實現自我價值，創造豐富精彩的人生！\n幸福玩家\n精彩人生只有一次，立即行動享受人生！",
-                          "color": "#ebebeb",
-                          "size": "xs",
-                          "flex": 5,
-                          "margin": "xs",
-                          "wrap": true
-                        }
-                      ],
-                      "spacing": "lg"
-                    },
-                    {
-                      "type": "box",
-                      "layout": "vertical",
-                      "contents": [
-                        {
-                          "type": "text",
-                          "text": "點選成為幸福玩家",
-                          "color": "#ffffff",
-                          "flex": 0,
-                          "offsetTop": "8px",
-                          "action": {
-                            "type": "uri",
-                            "label": "action",
-                            "uri": "https://line.me/R/ti/p/@258grtvt"
-                          },
-                          "offsetStart": "55px"
-                        }
-                      ],
-                      "borderWidth": "1px",
-                      "cornerRadius": "4px",
-                      "spacing": "sm",
-                      "borderColor": "#ffffff",
-                      "margin": "xxl",
-                      "height": "40px"
-                    }
-                  ],
-                  "position": "absolute",
-                  "offsetBottom": "0px",
-                  "offsetStart": "0px",
-                  "offsetEnd": "0px",
-                  "backgroundColor": "#2A0094cc",
-                  "paddingAll": "25px",
-                  "paddingTop": "18px"
-                },
-                {
-                  "type": "box",
-                  "layout": "vertical",
-                  "contents": [],
-                  "width": "50px",
-                  "height": "50px",
-                  "position": "absolute",
-                  "offsetTop": "92px",
-                  "offsetStart": "180px",
-                  "action": {
-                    "type": "uri",
-                    "label": "action",
-                    "uri": "https://line.me/R/ti/p/@ymf1544g"
-                  }
-                }
-              ],
-              "paddingAll": "0px"
-            }
-          }
-        ]
-      }}],);
+            }],);
             alert("名片已傳送訊息");
             liff.closeWindow();
         }
@@ -952,155 +705,22 @@
     </script>
     <style>
         h1 {
+          text-align: center;
+        }
+        
+        button {
             width: 80%;
             height: 40px;
             margin-left: 10%;
+            background-color: #c9e8e3;
+            font-weight: 600;
         }
-        @use 'sass:color';
-// Tip: If you don't want to use Sass, click the downward arrow on the top right of this textbox to see the compiled CSS.
-
-// One-stop magic hue shift
-$hue: 277deg; // change me (0deg-360deg)
-$hue-adjust: 135deg; // and me
-
-$hue-contrast: color.hue(color.adjust(hsl($hue, 100%, 50%), $hue: $hue-adjust));
-
-:root {
-  --page-background: #{$hue}, 55%, 12%;
-}
-
-button {
-  // We're using HSL values, so we can use hsla() and control opacity when required
-  // hsla(hue, saturation, lightness, opacity)
-
-  --text-base: #{$hue}, 55%, 40%;
-  --text-hover: #{$hue + 30}, 72%, 86%;
-
-  --shadow-start: #{$hue-contrast}, 100%, 72%;
-  --shadow-end: #{$hue + 5}, 90%, 50%;
-
-  --shadow-inner: #{$hue}, 90%, 62%;
-
-  all: unset;
-
-  // Text
-  color: hsla(var(--text-base), 1);
-  font: 700 1.125rem/1.2 Raleway, sans-serif;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  text-align: center;
-
-  // Button sizing
-  padding: 0.85em;
-  max-width: 100%;
-  width: 12em;
-
-  // Button styling
-  background: inherit;
-  background-clip: padding-box;
-  border: 5px solid hsla(var(--text-base), 1);
-  border-radius: 2em;
-  cursor: pointer;
-
-  // Effects
-  position: relative;
-  transition: 0.25s ease-out;
-
-  // Set up pseudo elements
-  &::before,
-  &::after {
-    content: "";
-    border-radius: inherit;
-    transition: inherit;
-    position: absolute;
-    inset: 0;
-    pointer-events: none;
-  }
-
-  // Gradient shadow
-  &::before {
-    // Position
-    inset: -0.2em;
-    z-index: -1;
-
-    // Effect
-    background: linear-gradient(hsla(var(--shadow-start), 1), hsla(var(--shadow-end), 1));
-    filter: blur(1.2em) saturate(1.2);
-
-    // Animation
-    transform-origin: bottom;
-    transform: scaleY(0.5);
-    opacity: 0;
-  }
-
-  // Semi-transparent blended box-shadow brightens up the border
-  &::after {
-    // Effect
-    box-shadow: inset 0 0 0 1px #fff, // inner pixel
-      0 0 0 4px hsla(0deg, 0%, 100%, 0.7), // ligthened border
-      1px 1px 0 4px #fff; // outer pixel
-    mix-blend-mode: overlay;
-
-    // Animation
-    opacity: 0;
-  }
-
-  &:hover,
-  &:focus {
-    color: hsla(var(--text-hover), 1);
-
-    // Lighten border
-    border-color: transparent;
-
-    // Inner shadow
-    box-shadow: 
-      inset 0 1.4em 0 hsla(var(--shadow-inner), 0.1), // gloss
-      inset 0 0 1.4em hsla(var(--shadow-inner), 0.32), // inner glow
-      0 1px 1px hsla(var(--shadow-inner), 0.32); // bottom line
-
-    // Show effects
-    &::before,
-    &::after {
-      transform: none;
-      opacity: 1;
-    }
-  }
-}
-
-// Pen styling, ignore
-html,
-body {
-  height: 100%;
-  overflow: hidden;
-}
-
-body {
-  display: flex;
-  place-content: center;
-  place-items: center;
-}
-
-body,
-.container {
-  background: hsla(var(--page-background), 1);
-}
-
-.container {
-  padding: 3em;
-  position: relative;
-  z-index: 1;
-}
-
-
     </style>
 </head>
 
 <body>
     <h1>數位名片版型分享</h1>
     <h1></h1>
-    <div class="container">
-        <button>Hover Me</button>
-      </div>
     <button onclick="liff_LINE_Card()">傳送LINE名片版型一</button><br /><br />
     <button onclick="liff_LINE_Card2()">傳送LINE名片版型二</button><br /><br />
     <button onclick="liff_LINE_Card3()">傳送LINE名片版型三</button><br /><br />
