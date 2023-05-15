@@ -612,93 +612,66 @@
     }
         function liff_LINE_Card3() {
           liff.shareTargetPicker([ {
-            "type": "flex",
-                  "altText": "全球商務引薦平台付款連結",
-                  "contents": {
-              "type": "carousel",
-              "contents": [
-                {
-                  "type": "bubble",
-                  "body": {
-                    "type": "box",
-                    "layout": "vertical",
-                    "contents": [
-                      {
-                        "type": "image",
-                        "url": "https://i.imgur.com/9wmB3oU.jpg",
-                        "size": "full",
-                        "aspectMode": "cover",
-                        "aspectRatio": "2.9:2.1",
-                        "gravity": "top"
-                      }
-                    ],
-                    "paddingAll": "0px"
-                  },
-                  "footer": {
-                    "type": "box",
-                    "layout": "horizontal",
-                    "contents": [
-                      {
-                        "type": "box",
-                        "layout": "vertical",
-                        "contents": [
-                          {
-                            "type": "text",
-                            "text": "文字訊息",
-                            "color": "#ffffff",
-                            "align": "center",
-                            "size": "md",
-                            "offsetTop": "30%",
-                            "action": {
-                              "type": "message",
-                              "label": "action",
-                              "text": "幸福超人的收款連結碼⋯⋯ \n\n「全球商務引薦平台」入會繳款 敬請點選連結付款，以新台幣計價喔⋯⋯\n\n『全球商務引薦平台』商務會員\n ◎入會年費：10,000元 \n◎註冊費：2,000元\n(商務會員入會時繳納，僅收一次) \n合計費用12,000元\n\n 匯款時敬請註記姓名，並私訊回覆我們，以利查詢！ 點選幸福超人的下方收款連結:\n\n https://www.chengkungpay.com/Home.html?id=aVc2aWhCWlZycW5va2VTRnU1ZTI2USUzZCUzZA=="
-                            },
-                            "wrap": true
-                          }
-                        ],
-                        "cornerRadius": "20px",
-                        "width": "90px"
-                      },
-                      {
-                        "type": "box",
-                        "layout": "vertical",
-                        "contents": [
-                          {
-                            "type": "button",
-                            "action": {
-                              "type": "uri",
-                              "label": "收款連結",
-                              "uri": "https://line.me/ti/g/3g4ohYhIiX"
-                            },
-                            "color": "#ffffff"
-                          }
-                        ],
-                        "width": "100px"
-                      },
-                      {
-                        "type": "box",
-                        "layout": "vertical",
-                        "contents": [
-                          {
-                            "type": "button",
-                            "action": {
-                              "type": "uri",
-                              "label": "分享",
-                              "uri": "https://gbrpcards.com/o5Oms"
-                            },
-                            "color": "#ffffff"
-                          }
-                        ]
-                      }
-                    ],
-                    "backgroundColor": "#3c5c6f"
-                  }
+            "type": "carousel",
+            "contents": [
+              {
+                "type": "bubble",
+                "body": {
+                  "type": "box",
+                  "layout": "vertical",
+                  "contents": [
+                    {
+                      "type": "image",
+                      "url": "https://i.imgur.com/9wmB3oU.jpg",
+                      "size": "full",
+                      "aspectMode": "cover",
+                      "aspectRatio": "2.9:2.1",
+                      "gravity": "top"
+                    }
+                  ],
+                  "paddingAll": "0px"
+                },
+                "footer": {
+                  "type": "box",
+                  "layout": "horizontal",
+                  "contents": [
+                    {
+                      "type": "box",
+                      "layout": "vertical",
+                      "contents": [
+                        {
+                          "type": "button",
+                          "action": {
+                            "type": "uri",
+                            "label": "收款連結",
+                            "uri": "https://line.me/ti/g/3g4ohYhIiX"
+                          },
+                          "color": "#ffffff"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "box",
+                      "layout": "vertical",
+                      "contents": [
+                        {
+                          "type": "button",
+                          "action": {
+                            "type": "postback",
+                            "label": "文字說明",
+                            "data": "幸福超人的收款連結碼⋯⋯   「全球商務引薦平台」入會繳款 敬請點選連結付款，以新台幣計價喔⋯⋯  『全球商務引薦平台』商務會員  ◎入會年費：10,000元  ◎註冊費：2,000元(商務會員入會時繳納，僅收一次)  合計費用12,000元   匯款時敬請註記姓名，並私訊回覆我們，以利查詢！ 點選幸福超人的下方收款連結:   https://www.chengkungpay.com/Home.html?id=aVc2aWhCWlZycW5va2VTRnU1ZTI2USUzZCUzZA=="
+                          },
+                          "color": "#ffffff"
+                        }
+                      ]
+                    }
+                  ],
+                  "backgroundColor": "#3c5c6f"
                 }
-              ]
-            }
-            }],);
-            alert("名片已傳送訊息");
+              }
+            ]
+          }],);
+          
         }
 
     </script>
