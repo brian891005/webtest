@@ -6,366 +6,366 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>數位名片分享頁面</title>
-
+    <script src="https://static.line-scdn.net/liff/edge/2/sdk.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+    <script>
+      //==========================LIFF API初始化================================
+      $(document).ready(function() {
+        liff.init({
+            liffId: "1657561794-l7GVGMMg"
+        });
+    });
+    //==========================LIFF API初始化================================
+  
+  
+    
+function liff_LINE_Card() {
+        liff.sendMessages([ {
+          "type": "flex",
+                "altText": "你好，我是姜繼堯GBRP平台創辦人，這是我的名片",
+                "contents": {
+            "type": "carousel",
+            "contents": [
+              {
+                "type": "bubble",
+                "body": {
+                  "type": "box",
+                  "layout": "vertical",
+                  "contents": [
+                    {
+                      "type": "image",
+                      "url": "https://i.imgur.com/c3qJjT0.png",
+                      "size": "full",
+                      "aspectMode": "cover",
+                      "aspectRatio": "2:3.4",
+                      "gravity": "top"
+                    },
+                    {
+                      "type": "box",
+                      "layout": "vertical",
+                      "contents": [],
+                      "position": "absolute",
+                      "cornerRadius": "20px",
+                      "offsetTop": "285px",
+                      "backgroundColor": "#ffffff00",
+                      "offsetStart": "2px",
+                      "height": "42px",
+                      "width": "42px",
+                      "action": {
+                        "type": "uri",
+                        "label": "action",
+                        "uri": "tel:0980911618"
+                      }
+                    },
+                    {
+                      "type": "box",
+                      "layout": "vertical",
+                      "contents": [],
+                      "position": "absolute",
+                      "cornerRadius": "20px",
+                      "offsetTop": "285px",
+                      "backgroundColor": "#ffffff00",
+                      "offsetStart": "48px",
+                      "height": "42px",
+                      "width": "42px",
+                      "action": {
+                        "type": "uri",
+                        "label": "action",
+                        "uri": "https://line.me/ti/p/5iUXzqm3nR"
+                      }
+                    },
+                    {
+                      "type": "box",
+                      "layout": "vertical",
+                      "contents": [],
+                      "position": "absolute",
+                      "cornerRadius": "20px",
+                      "offsetTop": "285px",
+                      "backgroundColor": "#ffffff00",
+                      "offsetStart": "93px",
+                      "height": "42px",
+                      "width": "42px",
+                      "action": {
+                        "type": "uri",
+                        "label": "action",
+                        "uri": "https://www.gbrp.tw/index.php/zh-tw/yesok99.html"
+                      }
+                    },
+                    {
+                      "type": "box",
+                      "layout": "vertical",
+                      "contents": [],
+                      "position": "absolute",
+                      "cornerRadius": "20px",
+                      "offsetTop": "285px",
+                      "backgroundColor": "#ffffff00",
+                      "offsetStart": "140px",
+                      "height": "42px",
+                      "width": "42px",
+                      "action": {
+                        "type": "uri",
+                        "label": "action",
+                        "uri": "mailto:yesok99@gmail.com"
+                      }
+                    },
+                    {
+                      "type": "box",
+                      "layout": "vertical",
+                      "contents": [],
+                      "position": "absolute",
+                      "cornerRadius": "20px",
+                      "offsetTop": "450px",
+                      "backgroundColor": "#ffffff00",
+                      "offsetStart": "2px",
+                      "height": "70px",
+                      "width": "340px",
+                      "action": {
+                        "type": "uri",
+                        "label": "action",
+                        "uri": "https://gbrpcards.com/Pas54"
+                      }
+                    }
+                  ],
+                  "paddingAll": "0px"
+                }
+              },
+              {
+                "type": "bubble",
+                "body": {
+                  "type": "box",
+                  "layout": "vertical",
+                  "contents": [
+                    {
+                      "type": "image",
+                      "url": "https://i.imgur.com/rFpFYux.png",
+                      "size": "full",
+                      "aspectMode": "cover",
+                      "aspectRatio": "2:3.4",
+                      "gravity": "top"
+                    },
+                    {
+                      "type": "box",
+                      "layout": "vertical",
+                      "contents": [],
+                      "position": "absolute",
+                      "cornerRadius": "20px",
+                      "offsetTop": "430px",
+                      "backgroundColor": "#ffffff00",
+                      "offsetStart": "50px",
+                      "height": "70px",
+                      "width": "70px",
+                      "action": {
+                        "type": "uri",
+                        "label": "action",
+                        "uri": "https://gbrp1688.com"
+                      }
+                    },
+                    {
+                      "type": "box",
+                      "layout": "vertical",
+                      "contents": [],
+                      "position": "absolute",
+                      "cornerRadius": "20px",
+                      "offsetTop": "430px",
+                      "backgroundColor": "#ffffff00",
+                      "offsetStart": "180px",
+                      "height": "70px",
+                      "width": "70px",
+                      "action": {
+                        "type": "uri",
+                        "label": "action",
+                        "uri": "https://www.gbrp.tw/index.php/zh-tw/"
+                      }
+                    }
+                  ],
+                  "paddingAll": "0px"
+                }
+              },
+              {
+                "type": "bubble",
+                "body": {
+                  "type": "box",
+                  "layout": "vertical",
+                  "contents": [
+                    {
+                      "type": "image",
+                      "url": "https://i.imgur.com/bCRu5tC.png",
+                      "size": "full",
+                      "aspectMode": "cover",
+                      "aspectRatio": "2:3.4",
+                      "gravity": "top"
+                    },
+                    {
+                      "type": "box",
+                      "layout": "vertical",
+                      "contents": [],
+                      "position": "absolute",
+                      "cornerRadius": "20px",
+                      "offsetTop": "125px",
+                      "backgroundColor": "#ffffff00",
+                      "offsetStart": "125px",
+                      "height": "75px",
+                      "width": "75px",
+                      "action": {
+                        "type": "uri",
+                        "label": "action",
+                        "uri": "https://lin.ee/73Ph7tU0"
+                      }
+                    },
+                    {
+                      "type": "box",
+                      "layout": "vertical",
+                      "contents": [],
+                      "position": "absolute",
+                      "cornerRadius": "20px",
+                      "offsetTop": "215px",
+                      "backgroundColor": "#ffffff00",
+                      "offsetStart": "185px",
+                      "height": "75px",
+                      "width": "75px",
+                      "action": {
+                        "type": "uri",
+                        "label": "action",
+                        "uri": "https://youtu.be/l9CHFtwfzUo"
+                      }
+                    },
+                    {
+                      "type": "box",
+                      "layout": "vertical",
+                      "contents": [],
+                      "position": "absolute",
+                      "cornerRadius": "20px",
+                      "offsetTop": "335px",
+                      "backgroundColor": "#ffffff00",
+                      "offsetStart": "125px",
+                      "height": "75px",
+                      "width": "75px",
+                      "action": {
+                        "type": "uri",
+                        "label": "action",
+                        "uri": "https://www.facebook.com/profile.php?id=100082946091971"
+                      }
+                    },
+                    {
+                      "type": "box",
+                      "layout": "vertical",
+                      "contents": [],
+                      "position": "absolute",
+                      "cornerRadius": "20px",
+                      "offsetTop": "405px",
+                      "backgroundColor": "#ffffff00",
+                      "offsetStart": "205px",
+                      "height": "75px",
+                      "width": "75px",
+                      "action": {
+                        "type": "uri",
+                        "label": "action",
+                        "uri": "https://youtu.be/M__N8AJ19MQ"
+                      }
+                    }
+                  ],
+                  "paddingAll": "0px"
+                }
+              },
+              {
+                "type": "bubble",
+                "body": {
+                  "type": "box",
+                  "layout": "vertical",
+                  "contents": [
+                    {
+                      "type": "image",
+                      "url": "https://i.imgur.com/vmkpFQ4.png",
+                      "size": "full",
+                      "aspectMode": "cover",
+                      "aspectRatio": "2:3.4",
+                      "gravity": "top"
+                    },
+                    {
+                      "type": "box",
+                      "layout": "vertical",
+                      "contents": [],
+                      "position": "absolute",
+                      "cornerRadius": "20px",
+                      "offsetTop": "125px",
+                      "backgroundColor": "#ffffff00",
+                      "offsetStart": "23px",
+                      "height": "70px",
+                      "width": "70px",
+                      "action": {
+                        "type": "uri",
+                        "label": "action",
+                        "uri": "https://gbrp1688.com/"
+                      }
+                    },
+                    {
+                      "type": "box",
+                      "layout": "vertical",
+                      "contents": [],
+                      "position": "absolute",
+                      "cornerRadius": "20px",
+                      "offsetTop": "295px",
+                      "backgroundColor": "#ffffff00",
+                      "offsetStart": "20px",
+                      "height": "70px",
+                      "width": "70px",
+                      "action": {
+                        "type": "uri",
+                        "label": "action",
+                        "uri": "https://gbrp1688.com/index.php?route=journal3/blog/post&journal_blog_post_id=15"
+                      }
+                    },
+                    {
+                      "type": "box",
+                      "layout": "vertical",
+                      "contents": [],
+                      "position": "absolute",
+                      "cornerRadius": "20px",
+                      "offsetTop": "215px",
+                      "backgroundColor": "#ffffff00",
+                      "offsetStart": "85px",
+                      "height": "70px",
+                      "width": "70px",
+                      "action": {
+                        "type": "uri",
+                        "label": "action",
+                        "uri": "https://gbrp1688.com/index.php?route=journal3/blog/post&journal_blog_post_id=14"
+                      }
+                    },
+                    {
+                      "type": "box",
+                      "layout": "vertical",
+                      "contents": [],
+                      "position": "absolute",
+                      "cornerRadius": "20px",
+                      "offsetTop": "395px",
+                      "backgroundColor": "#ffffff00",
+                      "offsetStart": "75px",
+                      "height": "70px",
+                      "width": "70px",
+                      "action": {
+                        "type": "uri",
+                        "label": "action",
+                        "uri": "https://docs.google.com/forms/d/e/1FAIpQLScynjOFP-jhM-zprnad6TLSlf3MMvJd9lvcphLBrCOPJnbpzA/viewform"
+                      }
+                    }
+                  ],
+                  "paddingAll": "0px"
+                }
+              }
+            ]
+          }
+          }],);
+        alert("名片已傳送訊息");
+        liff.closeWindow();
+    }
+    </script>
   
 
 </head>
-<body>
+<body onload="liff_LINE_Card()">
   <h1>數位名片版型分享</h1>
-  <script src="https://static.line-scdn.net/liff/edge/2/sdk.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
-  <script>
-    //==========================LIFF API初始化================================
-    $(document).ready(function() {
-      liff.init({
-          liffId: "1657561794-l7GVGMMg"
-      });
-  });
-  //==========================LIFF API初始化================================
 
-
-  
-    window.onload = function liff_LINE_Card() {
-      liff.sendMessages([ {
-        "type": "flex",
-              "altText": "你好，我是姜繼堯GBRP平台創辦人，這是我的名片",
-              "contents": {
-          "type": "carousel",
-          "contents": [
-            {
-              "type": "bubble",
-              "body": {
-                "type": "box",
-                "layout": "vertical",
-                "contents": [
-                  {
-                    "type": "image",
-                    "url": "https://i.imgur.com/c3qJjT0.png",
-                    "size": "full",
-                    "aspectMode": "cover",
-                    "aspectRatio": "2:3.4",
-                    "gravity": "top"
-                  },
-                  {
-                    "type": "box",
-                    "layout": "vertical",
-                    "contents": [],
-                    "position": "absolute",
-                    "cornerRadius": "20px",
-                    "offsetTop": "285px",
-                    "backgroundColor": "#ffffff00",
-                    "offsetStart": "2px",
-                    "height": "42px",
-                    "width": "42px",
-                    "action": {
-                      "type": "uri",
-                      "label": "action",
-                      "uri": "tel:0980911618"
-                    }
-                  },
-                  {
-                    "type": "box",
-                    "layout": "vertical",
-                    "contents": [],
-                    "position": "absolute",
-                    "cornerRadius": "20px",
-                    "offsetTop": "285px",
-                    "backgroundColor": "#ffffff00",
-                    "offsetStart": "48px",
-                    "height": "42px",
-                    "width": "42px",
-                    "action": {
-                      "type": "uri",
-                      "label": "action",
-                      "uri": "https://line.me/ti/p/5iUXzqm3nR"
-                    }
-                  },
-                  {
-                    "type": "box",
-                    "layout": "vertical",
-                    "contents": [],
-                    "position": "absolute",
-                    "cornerRadius": "20px",
-                    "offsetTop": "285px",
-                    "backgroundColor": "#ffffff00",
-                    "offsetStart": "93px",
-                    "height": "42px",
-                    "width": "42px",
-                    "action": {
-                      "type": "uri",
-                      "label": "action",
-                      "uri": "https://www.gbrp.tw/index.php/zh-tw/yesok99.html"
-                    }
-                  },
-                  {
-                    "type": "box",
-                    "layout": "vertical",
-                    "contents": [],
-                    "position": "absolute",
-                    "cornerRadius": "20px",
-                    "offsetTop": "285px",
-                    "backgroundColor": "#ffffff00",
-                    "offsetStart": "140px",
-                    "height": "42px",
-                    "width": "42px",
-                    "action": {
-                      "type": "uri",
-                      "label": "action",
-                      "uri": "mailto:yesok99@gmail.com"
-                    }
-                  },
-                  {
-                    "type": "box",
-                    "layout": "vertical",
-                    "contents": [],
-                    "position": "absolute",
-                    "cornerRadius": "20px",
-                    "offsetTop": "450px",
-                    "backgroundColor": "#ffffff00",
-                    "offsetStart": "2px",
-                    "height": "70px",
-                    "width": "340px",
-                    "action": {
-                      "type": "uri",
-                      "label": "action",
-                      "uri": "https://gbrpcards.com/Pas54"
-                    }
-                  }
-                ],
-                "paddingAll": "0px"
-              }
-            },
-            {
-              "type": "bubble",
-              "body": {
-                "type": "box",
-                "layout": "vertical",
-                "contents": [
-                  {
-                    "type": "image",
-                    "url": "https://i.imgur.com/rFpFYux.png",
-                    "size": "full",
-                    "aspectMode": "cover",
-                    "aspectRatio": "2:3.4",
-                    "gravity": "top"
-                  },
-                  {
-                    "type": "box",
-                    "layout": "vertical",
-                    "contents": [],
-                    "position": "absolute",
-                    "cornerRadius": "20px",
-                    "offsetTop": "430px",
-                    "backgroundColor": "#ffffff00",
-                    "offsetStart": "50px",
-                    "height": "70px",
-                    "width": "70px",
-                    "action": {
-                      "type": "uri",
-                      "label": "action",
-                      "uri": "https://gbrp1688.com"
-                    }
-                  },
-                  {
-                    "type": "box",
-                    "layout": "vertical",
-                    "contents": [],
-                    "position": "absolute",
-                    "cornerRadius": "20px",
-                    "offsetTop": "430px",
-                    "backgroundColor": "#ffffff00",
-                    "offsetStart": "180px",
-                    "height": "70px",
-                    "width": "70px",
-                    "action": {
-                      "type": "uri",
-                      "label": "action",
-                      "uri": "https://www.gbrp.tw/index.php/zh-tw/"
-                    }
-                  }
-                ],
-                "paddingAll": "0px"
-              }
-            },
-            {
-              "type": "bubble",
-              "body": {
-                "type": "box",
-                "layout": "vertical",
-                "contents": [
-                  {
-                    "type": "image",
-                    "url": "https://i.imgur.com/bCRu5tC.png",
-                    "size": "full",
-                    "aspectMode": "cover",
-                    "aspectRatio": "2:3.4",
-                    "gravity": "top"
-                  },
-                  {
-                    "type": "box",
-                    "layout": "vertical",
-                    "contents": [],
-                    "position": "absolute",
-                    "cornerRadius": "20px",
-                    "offsetTop": "125px",
-                    "backgroundColor": "#ffffff00",
-                    "offsetStart": "125px",
-                    "height": "75px",
-                    "width": "75px",
-                    "action": {
-                      "type": "uri",
-                      "label": "action",
-                      "uri": "https://lin.ee/73Ph7tU0"
-                    }
-                  },
-                  {
-                    "type": "box",
-                    "layout": "vertical",
-                    "contents": [],
-                    "position": "absolute",
-                    "cornerRadius": "20px",
-                    "offsetTop": "215px",
-                    "backgroundColor": "#ffffff00",
-                    "offsetStart": "185px",
-                    "height": "75px",
-                    "width": "75px",
-                    "action": {
-                      "type": "uri",
-                      "label": "action",
-                      "uri": "https://youtu.be/l9CHFtwfzUo"
-                    }
-                  },
-                  {
-                    "type": "box",
-                    "layout": "vertical",
-                    "contents": [],
-                    "position": "absolute",
-                    "cornerRadius": "20px",
-                    "offsetTop": "335px",
-                    "backgroundColor": "#ffffff00",
-                    "offsetStart": "125px",
-                    "height": "75px",
-                    "width": "75px",
-                    "action": {
-                      "type": "uri",
-                      "label": "action",
-                      "uri": "https://www.facebook.com/profile.php?id=100082946091971"
-                    }
-                  },
-                  {
-                    "type": "box",
-                    "layout": "vertical",
-                    "contents": [],
-                    "position": "absolute",
-                    "cornerRadius": "20px",
-                    "offsetTop": "405px",
-                    "backgroundColor": "#ffffff00",
-                    "offsetStart": "205px",
-                    "height": "75px",
-                    "width": "75px",
-                    "action": {
-                      "type": "uri",
-                      "label": "action",
-                      "uri": "https://youtu.be/M__N8AJ19MQ"
-                    }
-                  }
-                ],
-                "paddingAll": "0px"
-              }
-            },
-            {
-              "type": "bubble",
-              "body": {
-                "type": "box",
-                "layout": "vertical",
-                "contents": [
-                  {
-                    "type": "image",
-                    "url": "https://i.imgur.com/vmkpFQ4.png",
-                    "size": "full",
-                    "aspectMode": "cover",
-                    "aspectRatio": "2:3.4",
-                    "gravity": "top"
-                  },
-                  {
-                    "type": "box",
-                    "layout": "vertical",
-                    "contents": [],
-                    "position": "absolute",
-                    "cornerRadius": "20px",
-                    "offsetTop": "125px",
-                    "backgroundColor": "#ffffff00",
-                    "offsetStart": "23px",
-                    "height": "70px",
-                    "width": "70px",
-                    "action": {
-                      "type": "uri",
-                      "label": "action",
-                      "uri": "https://gbrp1688.com/"
-                    }
-                  },
-                  {
-                    "type": "box",
-                    "layout": "vertical",
-                    "contents": [],
-                    "position": "absolute",
-                    "cornerRadius": "20px",
-                    "offsetTop": "295px",
-                    "backgroundColor": "#ffffff00",
-                    "offsetStart": "20px",
-                    "height": "70px",
-                    "width": "70px",
-                    "action": {
-                      "type": "uri",
-                      "label": "action",
-                      "uri": "https://gbrp1688.com/index.php?route=journal3/blog/post&journal_blog_post_id=15"
-                    }
-                  },
-                  {
-                    "type": "box",
-                    "layout": "vertical",
-                    "contents": [],
-                    "position": "absolute",
-                    "cornerRadius": "20px",
-                    "offsetTop": "215px",
-                    "backgroundColor": "#ffffff00",
-                    "offsetStart": "85px",
-                    "height": "70px",
-                    "width": "70px",
-                    "action": {
-                      "type": "uri",
-                      "label": "action",
-                      "uri": "https://gbrp1688.com/index.php?route=journal3/blog/post&journal_blog_post_id=14"
-                    }
-                  },
-                  {
-                    "type": "box",
-                    "layout": "vertical",
-                    "contents": [],
-                    "position": "absolute",
-                    "cornerRadius": "20px",
-                    "offsetTop": "395px",
-                    "backgroundColor": "#ffffff00",
-                    "offsetStart": "75px",
-                    "height": "70px",
-                    "width": "70px",
-                    "action": {
-                      "type": "uri",
-                      "label": "action",
-                      "uri": "https://docs.google.com/forms/d/e/1FAIpQLScynjOFP-jhM-zprnad6TLSlf3MMvJd9lvcphLBrCOPJnbpzA/viewform"
-                    }
-                  }
-                ],
-                "paddingAll": "0px"
-              }
-            }
-          ]
-        }
-        }],);
-      alert("名片已傳送訊息");
-      liff.closeWindow();
-  }
-  </script>
 </body>
 </html>
 
